@@ -53,5 +53,5 @@ FilePrefixArray=(${FindedFilePrefix})
 for ExecuteConvert in ${FilePrefixArray[@]};#遍历执行转换(也将遵循换行符)
 do
 # echo "${ExecuteConvert}"
-$(${FFmpegPath} -i "${ExecuteConvert}${InFileType}" "${ExecuteConvert}${OutFileType}" ${isOverWrite})
+$(${FFmpegPath} -i "${ExecuteConvert}${InFileType}" -map_metadata -1 "${ExecuteConvert}${OutFileType}" ${isOverWrite})
 done
