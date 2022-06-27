@@ -1,7 +1,7 @@
 #!/bin/bash
 #202206231827
 
-#默认值
+#ffmpeg程序路径
 FFmpegPath="/Applications/ffmpeg"
 
 #默认为覆盖已有文件,空值为提示是否复写
